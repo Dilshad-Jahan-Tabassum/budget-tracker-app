@@ -11,7 +11,7 @@ export default function AddEntry() {
   const [type, setType] = useState("income");
   const [title, setTitle] = useState("");
   const [value, setValue] = useState("");
-  const [cattitle, setCattitle] = useState("Frelancing");
+  const [cattitle, setCattitle] = useState("Freelancing");
 
   return (
     <div className="border-b bg-gray-100 py-3">
@@ -59,26 +59,19 @@ export default function AddEntry() {
            <select
             id="type"
             name="type"
-            className="block w-40 text-slate-100 shrink-0 rounded-md border-0 px-3 py-1.5 bg-amber-600 text-white-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
+            className="block w-40 text-slate-100 shrink-0 rounded-md border-0 px-3 py-1.5 bg-purple-500 text-white-900 font-semibold ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
             value={cattitle}
             onChange={(e) => {
               setCattitle(e.target.value);
             }}
           >
-            <option value="Frelancing">Frelancing</option>
+            <option value="Freelancing">Freelancing</option>
             <option value="Salary">Salary</option>
             <option value="Tuition">Tuition</option>
-            <option value="Grocery">Grocery</option>
+            <option value="Shopping">Shopping</option>
             <option value="UtilityBil">UtilityBil</option>
             <option value="Entertrainment">Entertrainment</option>
           </select>
-
-
-
-
-
-
-
 
           <select
             id="type"
