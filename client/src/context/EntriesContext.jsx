@@ -12,7 +12,7 @@ export function EntriesProvider({ children }) {
     // .then (res => res.json())
     // .then( data => console.log(data))
     useEffect(()=>{
-      
+
     async function fetchData(){
       try {
         const response = await fetch('http://localhost:3000/entries');

@@ -5,7 +5,7 @@ const entrySchema = new mongoose.Schema({
     title: {
         type: String,
         required: true,
-        minlength: 5,
+        minlength: 1,
         trim: true,
     },
     value: {
@@ -21,7 +21,7 @@ const entrySchema = new mongoose.Schema({
     cattitle: {
         type: String,
         required: true,
-        minlength: 5,
+        minlength: 1,
         trim: true,
     },
 });
